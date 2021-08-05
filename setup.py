@@ -19,7 +19,7 @@ setup(
     author="Open Data Cube",
     #version=versioneer.get_version(), # currently not set up to work
     version="0.0.1",
-    packages=find_packages(exclude=("tests", "tests.*")),
+    packages=find_packages(exclude=("tests", "tests.*", "module")),
     package_data={"": ["*.json", "*.yaml"]},
     license="Apache Software License 2.0",
     classifiers=[
