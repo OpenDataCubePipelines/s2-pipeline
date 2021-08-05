@@ -6,7 +6,6 @@ from itertools import chain
 
 from setuptools import setup, find_packages
 
-import versioneer
 
 HERE = pathlib.Path(__file__).parent
 
@@ -18,7 +17,8 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     author="Open Data Cube",
-    version=versioneer.get_version(),
+    #version=versioneer.get_version(), # currently not set up to work
+    version="0.0.1",
     cmdclass=versioneer.get_cmdclass(),
     packages=find_packages(exclude=("tests", "tests.*")),
     package_data={"": ["*.json", "*.yaml"]},
