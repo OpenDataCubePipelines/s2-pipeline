@@ -32,14 +32,14 @@ setup(
     url="https://github.com/OpenDataCubePipelines/s2-pipeline",
     install_requires=[
         "click",
-    #    "eo-datasets", # Haven't set this up in NCI.
+    #    "eo-datasets", # Haven't set this up in NCI. NCI uses the module system
     ],
-    # entry_points="""
-    #     [console_scripts]
-    #     eo3-validate=eodatasets3.validate:run
-    #     eo3-prepare=eodatasets3.scripts.prepare:run
-    #     eo3-recompress-tar=eodatasets3.scripts.recompress:main
-    #     eo3-package-wagl=eodatasets3.scripts.packagewagl:run
-    #     eo3-to-stac=eodatasets3.scripts.tostac:run
-    # """,
+    entry_points="""
+        [console_scripts]
+        eo3-validate=eodatasets3.validate:run
+        eo3-prepare=eodatasets3.scripts.prepare:run
+        eo3-recompress-tar=eodatasets3.scripts.recompress:main
+        eo3-package-wagl=eodatasets3.scripts.packagewagl:run
+        eo3-to-stac=eodatasets3.scripts.tostac:run
+    """,
 )
