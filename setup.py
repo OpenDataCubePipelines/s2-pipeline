@@ -32,7 +32,7 @@ setup(
     url="https://github.com/OpenDataCubePipelines/s2-pipeline",
     install_requires=[
         "click",
-        "eo-datasets",
+    #    "eo-datasets", # Haven't set this up in NCI.
     ],
     # entry_points="""
     #     [console_scripts]
