@@ -39,6 +39,7 @@ fi
 export version="$1"
 
 module use /g/data/v10/public/modules/modulefiles
+module use /g/data/v10/private/modules/modulefiles
 module use ${module_dir}/modulefiles
 # module use -a ${ard_pipeline_module_dir}/modulefiles  # why the -a?
 module use  ${ard_pipeline_module_dir}/modulefiles
