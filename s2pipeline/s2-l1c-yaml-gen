@@ -84,6 +84,8 @@ def cli():
 @click.option('--log-level', default="DEBUG", type=str,   # default="WARNING"
               help="Set a log level.  e.g. WARNING INFO")
 # s2_l1_yaml_gen
+
+
 def s2_l1_yaml_gen(level1_root: Path, output_dir: Path, ooa_output_dir: Path,
                    s2_aoi: Path,
                    year_month: datetime, dry_run: bool, log_level: str):
@@ -151,4 +153,4 @@ def s2_l1_yaml_gen(level1_root: Path, output_dir: Path, ooa_output_dir: Path,
 
 
 if __name__ == '__main__':
-    cli()
+    s2_l1_yaml_gen()
